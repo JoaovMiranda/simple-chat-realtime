@@ -1,17 +1,25 @@
 {
   "name": "web-chat",
   "version": "1.0.0",
-  "description": "A simple chat with js",
-  "main": "index.js",
+  "description": "npm run devStart",
+  "main": "script.js",
+  "dependencies": {
+    "nodemon": "^2.0.3",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {},
   "scripts": {
-    "devStart": "nodemon server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaovMiranda/simple-chat-realtime.git"
   },
   "author": "Joao Miranda",
   "license": "ISC",
-  "dependencies": {
-    "socket.io": "^2.3.0"
+  "bugs": {
+    "url": "https://github.com/JoaovMiranda/simple-chat-realtime/issues"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.3"
-  }
+  "homepage": "https://github.com/JoaovMiranda/simple-chat-realtime#readme"
 }

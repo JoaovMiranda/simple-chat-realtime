@@ -1,9 +1,9 @@
-const io = require('socket.io')(3000)
+const skio = require('socket.io')(3000)
 
 const users = {}
 
-io.on('connection', socket => {
 
+skio.on('connection', socket => {
 
     socket.on('new-user', name => {
         users[socket.id] = name
