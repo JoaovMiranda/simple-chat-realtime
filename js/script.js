@@ -5,9 +5,9 @@ const messageForm = document.getElementById('send-container')
 const messageInput = document.getElementById('message-input')
 
 
-const name = prompt('What is your name? ')
+const nameInput = prompt('What is your name? ')
 appendMessage('You joined')
-socket.emit('new-user', name)
+socket.emit('new-user', nameInput)
 
 
 
@@ -22,8 +22,6 @@ socket.on('user-connected', name => {
 socket.on('user-disconnected', name => {
   appendMessage(`${name} has Disconnected`)
 })
-
-
 
 messageForm.addEventListener('submit', e => {
   e.preventDefault()
